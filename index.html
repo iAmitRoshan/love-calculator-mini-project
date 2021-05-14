@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				<title>Love Calculator by i-akr</title>
+				
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="style.css">
+ <link rel="icon" href="image/logo.jpg">
+</head>
+
+<body class="b-img" style="background-image:url('image/cover.jpg'); background-repeat: no-repeat; background-size:cover;background-padding:center; width:100%;height:100vh;postion:relative;">
+				
+				<header style="width:100%;postion:absolute;transform:translate(-50%,-50%);margin-top:50%;margin-left:50%;">
+
+<img class="card m-auto center rounded-circle" src="image/logo.jpg" alt="site logo" style="width:200px;height:200px;">
+
+<br>
+<br>
+				    
+				    
+				<div class="card w-50 m-auto text-center ">
+  <div class="card-header bg-danger rounded  text-white "> <h3>How much your Family👪 love you </h3></div>
+  
+  
+  <div class="card-body border">
+  				<h2>Family Love ❤ Calculator</h2>
+  				<from class="from-inline" name="myForm">
+  								<div class="from-group">
+  								<input type="text" name="fname" class="from-control w-75 m-auto text-center rounded border border-primary" placeholder="Your Name" required="">
+  								</div>
+  								
+  								<div> <span>+</span></div>
+  								<div class="from-group">
+  												<input type="number" class="from-control w-75 m-auto text-center rounded border border-primary" name="familyname" required=""; placeholder=" family members" size="30" >
+  												<br>
+  												<div>
+  																		
+  															</from>
+  														<br>
+  														<button style="background-color:#4CAF50 "class="btn btn-sucess w-50 from-control text-center text-white rounded border border-danger "  onclick="checklove()">Click on me</button>
+  														<br>
+  														<br>
+  														<div>
+  																		<input type="text" class="w-25 m-auto text-center rounded border border-warning " id="lovevalue" placeholder="Love Percentage">
+  														</div>
+  												</div>
+  												
+  												
+  								</div>
+  								
+  								
+  			
+  				
+  </div>
+  
+  
+  <div style="background-color:#555555" class="card-footer text-white">
+  				<h4>God Bless You & Your Family.</h4>
+  				<a href="https://github.com/iAmitRoshan"><h4>Follow GitHub.com/iAmitRoshan</h4></a>
+  				</div>
+</div>
+				
+				
+				</header>
+				
+		
+				<script type="text/javascript">
+								<!-- love percentage -->
+								function checklove() {
+								var lovedata=Math.random() * 100;
+								lovedata=Math.floor(lovedata);
+								document.getElementById('lovevalue').value=lovedata + "%";
+												
+								}
+			<!--	 form validatiin 
+function validationForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+ var x = document.forms["myForm"]["familyname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+
+}
+-->
+								
+				</script>
+</body>
+</html>
